@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhat's Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/avatar.png"
+              alt="Nguyen Minh Nhat"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Nguyen Minh Nhat</h1>
+
+            <p class="title">Fullstack developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:nhatnguyenbobo7600@gmail.com"
+                  class="contact-link"
+                  >nhatnguyenbobo7600@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+84971041869" class="contact-link"
+                  >+84 971041869</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">June 07, 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Binh Chanh, Ho Chi Minh, Viet Nam</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/NhatNguyen7602"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.youtube.com/@nguyenminhnhat5946"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/nhatnguyen7602"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li> -->
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a recent graduate with a desire to become a Full Stack Web
+              Developer. I have successfully completed a program in Information
+              Technology and have acquired fundamental knowledge of web
+              programming. I am currently seeking opportunities to kickstart my
+              career in this zeld and I am eager to learn and develop my skills
+              in a real-world work environment.
+            </p>
+          </section>
+
+          <!--
+        - service
+      -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">web UI development</h4>
+
+                  <p class="service-item-text">
+                    Designing intuitive and visually appealing web interfaces
+                    for optimal user experience.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="server-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Database development</h4>
+
+                  <p class="service-item-text">
+                    Building efficient data storage systems for effective
+                    information management.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="swap-horizontal-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">API development</h4>
+
+                  <p class="service-item-text">
+                    Building APIs for seamless integration and data sharing
+                    across software applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <ion-icon name="apps-outline"></ion-icon>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    end-to-end web development
+                  </h4>
+
+                  <p class="service-item-text">
+                    End-to-end web development: frontend, backend, and database
+                    integration.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+        - testimonials
+      -->
+
+          <!--
+        - testimonials modal
+      -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+        - clients
+      -->
+        </article>
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Skills</h3>
+
+            <div class="skills-list content-card">
+              <h4 class="h4">Frontend</h4>
+
+              <div class="skills-item">
+                <ion-icon class="mr-4" name="logo-html5"></ion-icon>
+                <h5 class="h5">HTML</h5>
+              </div>
+
+              <div class="skills-item">
+                <ion-icon class="mr-4" name="logo-css3"></ion-icon>
+                <h5 class="h5">CSS</h5>
+              </div>
+
+              <div class="skills-item">
+                <ion-icon class="mr-4" name="logo-javascript"></ion-icon>
+                <h5 class="h5">JavaScript</h5>
+              </div>
+
+              <div class="skills-item">
+                <ion-icon class="mr-4" name="logo-react"></ion-icon>
+                <h5 class="h5">ReactJS</h5>
+              </div>
+
+              <div class="skills-item">
+                <img
+                  class="skills-item-icon mr-4"
+                  src="./assets/images/icons8-typescript.svg"
+                />
+                <h5 class="h5">TypeScript</h5>
+              </div>
+
+              <h4 class="h4">Backend</h4>
+
+              <div class="skills-item">
+                <ion-icon class="mr-4" name="logo-nodejs"></ion-icon>
+                <h5 class="h5">NodeJS</h5>
+              </div>
+
+              <li class="skills-item">
+                <ion-icon class="mr-4" name="prism-outline"></ion-icon>
+                <h5 class="h5">Prisma</h5>
+              </li>
+
+              <li class="skills-item">
+                <img
+                  class="skills-item-icon mr-4"
+                  src="./assets/images/icons8-express-js.svg"
+                />
+                <h5 class="h5">ExpressJS</h5>
+              </li>
+
+              <li class="skills-item">
+                <img
+                  class="skills-item-icon mr-4"
+                  src="./assets/images/file-type-nest-service-js.svg"
+                />
+                <h5 class="h5">NestJS</h5>
+              </li>
+
+              <h4 class="h4">Database</h4>
+
+              <div class="skills-item">
+                <img
+                  class="skills-item-icon mr-4"
+                  src="./assets/images/icons8-mysql.svg"
+                />
+                <h5 class="h5">MySQL</h5>
+              </div>
+
+              <h4 class="h4">Deployment</h4>
+
+              <li class="skills-item">
+                <ion-icon class="mr-4" name="git-branch-outline"></ion-icon>
+                <h5 class="h5">Git</h5>
+              </li>
+
+              <li class="skills-item">
+                <ion-icon class="mr-4" name="logo-docker"></ion-icon>
+                <h5 class="h5">Docker</h5>
+              </li>
+            </div>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">CYBERSOFT ACADEMY</h4>
+
+                <span>2022 — 2023</span>
+
+                <div class="timeline-text">
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1Zyzc3fExyelPGpLh_Tx1BB8jSK5thDPj/view?usp=sharing"
+                  >
+                    Professional Front-end Developer (8.8 - Very Good)
+                  </a>
+
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1rDpZm2uuF5t4SCVTOn0G0mdDUBYvHpq6/view?usp=sharing"
+                    >Professional Node JS Developer (9.1 - Excellent)</a
+                  >
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">LY TU TRONG COLLEGE</h4>
+
+                <span>2017 — 2022</span>
+
+                <div class="timeline-text">
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1AWlB4OanR0bzdz0SPgdAXLJxQs89UBcP/view?usp=sharing"
+                  >
+                    Information Technology - IT (8.5 - Very Good)
+                  </a>
+                </div>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web UI Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Database & API Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>End-To-End Web Development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web UI Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Database & API Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>End-To-End Web Development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="end-to-end web development"
+              >
+                <a target="_blank" href="http://blog.nhatnguyen.click">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/chanh_blog.png"
+                      alt="Chanh's Blog"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Chanh's Blog</h3>
+
+                  <p class="project-category">End-To-End Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web ui development"
+              >
+                <a target="_blank" href="https://meipaly-ui-three.vercel.app">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/meipaly.png"
+                      alt="Meipaly"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Meipaly</h3>
+
+                  <p class="project-category">Web UI Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web ui development"
+              >
+                <a target="_blank" href="https://samar-ui.vercel.app">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/samar.png"
+                      alt="Samar"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Samar</h3>
+
+                  <p class="project-category">Web UI Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web ui development"
+              >
+                <a target="_blank" href="https://youtu.be/-eUxDNTiOTM">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/cyberflix_movie.png"
+                      alt="Cyberflix Movie"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Cyberflix Movie</h3>
+
+                  <p class="project-category">Web UI Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web ui development"
+              >
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1aLIVjLhH_RxAzLyrFCGy_S76019NaGim/view?usp=sharing"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/clone_fiverr_ui.png"
+                      alt="Clone Fiverr"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Clone Fiverr</h3>
+
+                  <p class="project-category">Web UI Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="database & api development"
+              >
+                <a target="_blank" href="https://youtu.be/0fXBU4r0cQw">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/clone_pinterest.png"
+                      alt="Clone Pinterest (Backend)"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Clone Pinterest (Backend)</h3>
+
+                  <p class="project-category">Database & API Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="database & api development"
+              >
+                <a target="_blank" href="https://youtu.be/tWjvUdnMSzE">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/clone_fiverr.png"
+                      alt="Clone Fiverr (Backend)"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Clone Fiverr (Backend)</h3>
+
+                  <p class="project-category">Database & API Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125433.73598849656!2d106.49692911618111!3d10.749564691991736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752d00551422a9%3A0x9d615ccac4d7af23!2zQsOsbmggQ2jDoW5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1687428601894!5m2!1svi!2s"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form (UI Only)</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
