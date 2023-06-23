@@ -893,7 +893,7 @@ main {
   line-height: 1.6;
 }
 
-.timeline-text a {
+.timeline-text-link {
   margin: 4px 0;
   display: inline-block;
   background: var(--text-gradient-yellow);
