@@ -172,6 +172,14 @@ body {
   margin-right: 4px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -354,7 +362,8 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .info-content .name {
@@ -496,15 +505,15 @@ main {
 .navbar-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   padding: 0 10px;
+  justify-content: space-evenly;
 }
 
 .navbar-link {
   color: var(--light-gray);
   font-size: var(--fs-8);
-  padding: 20px 7px;
+  padding: 20px 12px;
   transition: color var(--transition-1);
 }
 
@@ -927,7 +936,6 @@ main {
 .skills-item {
   align-items: center;
   color: var(--white-2);
-  margin-top: 12px;
   display: inline-flex;
   background-color: hsl(45, 42%, 48%);
   border-radius: 4px;
@@ -939,7 +947,7 @@ main {
 }
 
 .skills-item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .skill .title-wrapper {
@@ -1468,10 +1476,6 @@ textarea.form-input::-webkit-resizer {
     gap: 25px;
   }
 
-  .avatar-box {
-    border-radius: 30px;
-  }
-
   .avatar-box img {
     width: 120px;
   }
@@ -1518,10 +1522,6 @@ textarea.form-input::-webkit-resizer {
 
   .navbar {
     border-radius: 20px 20px 0 0;
-  }
-
-  .navbar-list {
-    gap: 20px;
   }
 
   .navbar-link {
@@ -1664,7 +1664,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .skills-item:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 6px;
   }
 
   /**
@@ -1881,11 +1881,6 @@ textarea.form-input::-webkit-resizer {
     box-shadow: none;
   }
 
-  .navbar-list {
-    gap: 30px;
-    padding: 0 20px;
-  }
-
   .navbar-link {
     font-weight: var(--fw-500);
   }
@@ -2015,7 +2010,6 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 150px;
-    border-radius: 12px;
   }
 
   .info-content .name {
