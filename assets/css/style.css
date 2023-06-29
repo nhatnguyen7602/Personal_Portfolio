@@ -365,7 +365,7 @@ main {
 }
 
 .sidebar.active {
-  max-height: 405px;
+  max-height: 500px;
 }
 
 .sidebar-info {
@@ -456,10 +456,15 @@ main {
 }
 
 .contact-item {
-  min-width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.contact-item-cv {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .contact-info {
@@ -1026,6 +1031,7 @@ main {
 }
 
 .select-list {
+  list-style-type: none;
   background: var(--eerie-black-2);
   position: absolute;
   top: calc(100% + 6px);
@@ -1487,7 +1493,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .sidebar.active {
-    max-height: 584px;
+    max-height: 650px;
   }
 
   .sidebar-info {
@@ -1527,6 +1533,10 @@ textarea.form-input::-webkit-resizer {
 
   .contacts-list {
     gap: 20px;
+  }
+
+  .contact-item-cv {
+    margin-top: 24px;
   }
 
   .contact-info {
@@ -1738,6 +1748,10 @@ textarea.form-input::-webkit-resizer {
   .contacts-list {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
+  }
+
+  .contact-item-cv {
+    margin-top: 30px;
   }
 
   /**
