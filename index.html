@@ -6,23 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nhat's Portfolio</title>
 
-    <!--
-    - favicon
-  -->
     <link
       rel="shortcut icon"
       href="./assets/images/logo.png"
       type="image/x-icon"
     />
 
-    <!--
-    - custom css link
-  -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
-    - google font link
-  -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,15 +26,7 @@
   </head>
 
   <body>
-    <!--
-    - #MAIN
-  -->
-
     <main>
-      <!--
-      - #SIDEBAR
-    -->
-
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
@@ -121,6 +107,17 @@
                 <address>Binh Chanh, Ho Chi Minh, Viet Nam</address>
               </div>
             </li>
+
+            <li class="contact-item">
+              <a
+                href="./assets/files/CV_nguyenMinhNhat_Fullstack_Fresher.pdf"
+                class="icon-box-cv"
+                download
+              >
+                <ion-icon name="document-outline"></ion-icon>
+                Dowload CV
+              </a>
+            </li>
           </ul>
 
           <div class="separator"></div>
@@ -159,10 +156,6 @@
         </div>
       </aside>
 
-      <!--
-      - #main-content
-    -->
-
       <div class="main-content">
         <nav class="navbar">
           <ul class="navbar-list">
@@ -181,10 +174,6 @@
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
             </li>
-
-            <!-- <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li> -->
           </ul>
         </nav>
 
@@ -203,10 +192,6 @@
               in a real-world work environment.
             </p>
           </section>
-
-          <!--
-        - service
-      -->
 
           <section class="service">
             <h3 class="h3 service-title">What i'm doing</h3>
@@ -275,58 +260,6 @@
               </li>
             </ul>
           </section>
-
-          <!--
-        - testimonials
-      -->
-
-          <!--
-        - testimonials modal
-      -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icons8-mysql.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!--
-        - clients
-      -->
         </article>
 
         <article class="resume" data-page="resume">
@@ -437,6 +370,7 @@
 
                 <div class="timeline-text">
                   <a
+                    class="mb-8"
                     target="_blank"
                     href="https://drive.google.com/file/d/1Zyzc3fExyelPGpLh_Tx1BB8jSK5thDPj/view?usp=sharing"
                   >
@@ -536,7 +470,7 @@
                 data-filter-item
                 data-category="end-to-end web development"
               >
-                <a target="_blank" href="https://blog.nhatnguyen.click">
+                <a data-projects-item>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -549,7 +483,65 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Chanh's Blog</h3>
+                  <h3 class="project-title" data-projects-title>
+                    Chanh's Blog
+                  </h3>
+
+                  <ul hidden class="project-text" data-projects-text>
+                    <li>
+                      URL:
+                      <form
+                        action="https://blog.nhatnguyen.click"
+                        target="_blank"
+                      >
+                        <input type="submit" value="blog.nhatnguyen.click" />
+                      </form>
+                    </li>
+
+                    <li>
+                      Demo:
+                      <form
+                        action="https://youtu.be/Hg0DhgFDgFg"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://youtu.be/Hg0DhgFDgFg"
+                        />
+                      </form>
+                    </li>
+
+                    <li>
+                      Github:
+                      <form
+                        action="https://github.com/nhatnguyen7602/chanh-blog-fullstack.git"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://github.com/nhatnguyen7602/chanh-blog-fullstack.git"
+                        />
+                      </form>
+                    </li>
+
+                    <li>Responsibilities: Developer</li>
+
+                    <li>
+                      Frontend: ReactJS, Redux, Axios, Ant Design, CKEditor, ...
+                    </li>
+
+                    <li>Backend: NestJS, JWT, Prisma, MySQL, ...</li>
+
+                    <li>Deployment: Docker (VPS)</li>
+
+                    <li>
+                      Descriptions: A website that allows users to create an
+                      account, log in, and write articles. Additionally, the
+                      website supports search functionality, interaction, and
+                      commenting on articles, along with CRUD operations to
+                      manage the content of articles and account information.
+                    </li>
+                  </ul>
 
                   <p class="project-category">End-To-End Web Development</p>
                 </a>
@@ -560,7 +552,7 @@
                 data-filter-item
                 data-category="web ui development"
               >
-                <a target="_blank" href="https://meipaly-ui-three.vercel.app">
+                <a data-projects-item>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -573,7 +565,46 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Meipaly</h3>
+                  <h3 class="project-title" data-projects-title>Meipaly</h3>
+
+                  <ul hidden class="project-text" data-projects-text>
+                    <li>
+                      URL:
+                      <form
+                        action="https://meipaly-ui-three.vercel.app"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://meipaly-ui-three.vercel.app"
+                        />
+                      </form>
+                    </li>
+
+                    <li>
+                      Github:
+                      <form
+                        action="https://github.com/nhatnguyen7602/Meipaly_UI.git"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://github.com/nhatnguyen7602/Meipaly_UI.git"
+                        />
+                      </form>
+                    </li>
+
+                    <li>Responsibilities: Developer</li>
+
+                    <li>Frontend: HTML, CSS, ...</li>
+
+                    <li>Deployment: Github, Vercel</li>
+
+                    <li>
+                      Descriptions: This website provides HTML and CSS interface
+                      code for web development.
+                    </li>
+                  </ul>
 
                   <p class="project-category">Web UI Development</p>
                 </a>
@@ -584,7 +615,7 @@
                 data-filter-item
                 data-category="web ui development"
               >
-                <a target="_blank" href="https://samar-ui.vercel.app">
+                <a data-projects-item>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -597,7 +628,46 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Samar</h3>
+                  <h3 class="project-title" data-projects-title>Samar</h3>
+
+                  <ul hidden class="project-text" data-projects-text>
+                    <li>
+                      URL:
+                      <form
+                        action="https://samar-ui.vercel.app"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://samar-ui.vercel.app"
+                        />
+                      </form>
+                    </li>
+
+                    <li>
+                      Github:
+                      <form
+                        action="https://github.com/nhatnguyen7602/Samar_UI.git"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://github.com/nhatnguyen7602/Samar_UI.git"
+                        />
+                      </form>
+                    </li>
+
+                    <li>Responsibilities: Developer</li>
+
+                    <li>Frontend: HTML, CSS, ...</li>
+
+                    <li>Deployment: Github, Vercel</li>
+
+                    <li>
+                      Descriptions: This website provides HTML and CSS interface
+                      code for web development.
+                    </li>
+                  </ul>
 
                   <p class="project-category">Web UI Development</p>
                 </a>
@@ -608,7 +678,7 @@
                 data-filter-item
                 data-category="web ui development"
               >
-                <a target="_blank" href="https://youtu.be/-eUxDNTiOTM">
+                <a data-projects-item>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -621,7 +691,50 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Cyberflix Movie</h3>
+                  <h3 class="project-title" data-projects-title>
+                    Cyberflix Movie
+                  </h3>
+
+                  <ul hidden class="project-text" data-projects-text>
+                    <li>
+                      Demo:
+                      <form
+                        action="https://youtu.be/-eUxDNTiOTM"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://youtu.be/-eUxDNTiOTM"
+                        />
+                      </form>
+                    </li>
+
+                    <li>
+                      Github:
+                      <form
+                        action="https://github.com/nhatnguyen7602/Cyberflix_Movie.git"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://github.com/nhatnguyen7602/Cyberflix_Movie.git"
+                        />
+                      </form>
+                    </li>
+
+                    <li>Responsibilities: Developer</li>
+
+                    <li>Frontend: ReactJS, Redux, Axios, Ant Design, ...</li>
+
+                    <li>
+                      Descriptions: The support for users to view movie
+                      schedules and book movie tickets (log in, sign up, search,
+                      book movie tickets, save movie ticket purchase history,
+                      ...) The support for admins to manage users, movies, and
+                      movie schedules (CRUD operations for users, movies, movie
+                      schedules, ...)
+                    </li>
+                  </ul>
 
                   <p class="project-category">Web UI Development</p>
                 </a>
@@ -632,10 +745,7 @@
                 data-filter-item
                 data-category="web ui development"
               >
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1aLIVjLhH_RxAzLyrFCGy_S76019NaGim/view?usp=sharing"
-                >
+                <a data-projects-item>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -648,7 +758,50 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Clone Fiverr</h3>
+                  <h3 class="project-title" data-projects-title>
+                    Clone Fiverr
+                  </h3>
+
+                  <ul hidden class="project-text" data-projects-text>
+                    <li>
+                      Demo:
+                      <form
+                        action="https://drive.google.com/file/d/1aLIVjLhH_RxAzLyrFCGy_S76019NaGim/view?usp=sharing"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://drive.google.com/file/d/1aLIVjLhH_RxAzLyrFCGy_S76019NaGim/view?usp=sharing"
+                        />
+                      </form>
+                    </li>
+
+                    <li>
+                      Github:
+                      <form
+                        action="https://github.com/nhatnguyen7602/Clone_Fiverr_UI.git"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://github.com/nhatnguyen7602/Clone_Fiverr_UI.git"
+                        />
+                      </form>
+                    </li>
+
+                    <li>Responsibilities: Developer</li>
+
+                    <li>Frontend: ReactJS, Redux, Axios, Ant Design, ...</li>
+
+                    <li>
+                      Description: Fiverr provides support for freelancers to
+                      search for jobs and for clients to search and select jobs
+                      (login, sign up, search, hire jobs, ...). It also offers
+                      support for administrators to manage users, jobs, and
+                      hired jobs (CRUD operations for users, jobs, hired jobs,
+                      ...).
+                    </li>
+                  </ul>
 
                   <p class="project-category">Web UI Development</p>
                 </a>
@@ -659,7 +812,7 @@
                 data-filter-item
                 data-category="database & api development"
               >
-                <a target="_blank" href="https://youtu.be/0fXBU4r0cQw">
+                <a data-projects-item>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -672,7 +825,46 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Clone Pinterest (Backend)</h3>
+                  <h3 class="project-title" data-projects-title>
+                    Clone Pinterest (Backend)
+                  </h3>
+
+                  <ul hidden class="project-text" data-projects-text>
+                    <li>
+                      Demo:
+                      <form
+                        action="https://youtu.be/0fXBU4r0cQw"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://youtu.be/0fXBU4r0cQw"
+                        />
+                      </form>
+                    </li>
+
+                    <li>
+                      Github:
+                      <form
+                        action="https://github.com/nhatnguyen7602/Clone_Pinterest_API.git"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://github.com/nhatnguyen7602/Clone_Pinterest_API.git"
+                        />
+                      </form>
+                    </li>
+
+                    <li>Responsibilities: Developer</li>
+
+                    <li>Backend: NodeJS, ExpressJS, JWT, Prisma, MySQL, ...</li>
+
+                    <li>
+                      This project focuses on creating an API for managing
+                      images, users, comments, ...
+                    </li>
+                  </ul>
 
                   <p class="project-category">Database & API Development</p>
                 </a>
@@ -683,7 +875,7 @@
                 data-filter-item
                 data-category="database & api development"
               >
-                <a target="_blank" href="https://youtu.be/tWjvUdnMSzE">
+                <a data-projects-item>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -696,13 +888,71 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Clone Fiverr (Backend)</h3>
+                  <h3 class="project-title" data-projects-title>
+                    Clone Fiverr (Backend)
+                  </h3>
+
+                  <ul hidden class="project-text" data-projects-text>
+                    <li>
+                      Demo:
+                      <form
+                        action="https://youtu.be/tWjvUdnMSzE"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://youtu.be/tWjvUdnMSzE"
+                        />
+                      </form>
+                    </li>
+
+                    <li>
+                      Github:
+                      <form
+                        action="https://github.com/nhatnguyen7602/Clone_Fiverr_API.git"
+                        target="_blank"
+                      >
+                        <input
+                          type="submit"
+                          value="https://github.com/nhatnguyen7602/Clone_Fiverr_API.git"
+                        />
+                      </form>
+                    </li>
+
+                    <li>Responsibilities: Developer</li>
+
+                    <li>Backend: NestJS, JWT, Prisma, MySQL, ...</li>
+
+                    <li>
+                      This project focuses on creating an API for managing
+                      users, jobs, hired jobs, ...
+                    </li>
+                  </ul>
 
                   <p class="project-category">Database & API Development</p>
                 </a>
               </li>
             </ul>
           </section>
+
+          <!-- projects modal -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="projects-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Chanh's Blog</h4>
+
+                <div class="modal-text">
+                  <ul data-modal-text></ul>
+                </div>
+              </div>
+            </section>
+          </div>
         </article>
 
         <article class="contact" data-page="contact">
@@ -722,13 +972,19 @@
           </section>
 
           <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form (UI Only)</h3>
+            <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form
+              action="https://formspree.io/f/xjvqbabb"
+              method="post"
+              class="form"
+              data-form
+            >
               <div class="input-wrapper">
                 <input
                   type="text"
                   name="fullname"
+                  id="fullname"
                   class="form-input"
                   placeholder="Full name"
                   required
@@ -738,6 +994,7 @@
                 <input
                   type="email"
                   name="email"
+                  id="email"
                   class="form-input"
                   placeholder="Email address"
                   required
@@ -747,6 +1004,7 @@
 
               <textarea
                 name="message"
+                id="message"
                 class="form-input"
                 placeholder="Your Message"
                 required
@@ -763,14 +1021,9 @@
       </div>
     </main>
 
-    <!--
-    - custom js link
-  -->
     <script src="./assets/js/script.js"></script>
 
-    <!--
-    - ionicon link
-  -->
+    <!-- Icon -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

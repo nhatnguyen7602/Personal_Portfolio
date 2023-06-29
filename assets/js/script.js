@@ -1,5 +1,9 @@
 "use strict";
 
+function redirectToURL(url) {
+  window.location.href = url;
+}
+
 // element toggle function
 const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
@@ -14,42 +18,37 @@ sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
 
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+// projects variables
+const projectsItem = document.querySelectorAll("[data-projects-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
 // modal variable
-const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
-const testimonialsModalFunc = function () {
+const projectsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 };
 
 // add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-  testimonialsItem[i].addEventListener("click", function () {
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+for (let i = 0; i < projectsItem.length; i++) {
+  projectsItem[i].addEventListener("click", function () {
     modalTitle.innerHTML = this.querySelector(
-      "[data-testimonials-title]"
+      "[data-projects-title]"
     ).innerHTML;
-    modalText.innerHTML = this.querySelector(
-      "[data-testimonials-text]"
-    ).innerHTML;
+    modalText.innerHTML = this.querySelector("[data-projects-text]").innerHTML;
 
-    testimonialsModalFunc();
+    projectsModalFunc();
   });
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+modalCloseBtn.addEventListener("click", projectsModalFunc);
+overlay.addEventListener("click", projectsModalFunc);
 
 // custom select variables
 const select = document.querySelector("[data-select]");
