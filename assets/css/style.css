@@ -221,7 +221,7 @@ article {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
+  font-size: var(--fs-5);
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
@@ -587,9 +587,8 @@ main {
 }
 
 .service-item {
-  display: flex;
-  align-items: center;
   position: relative;
+  list-style-type: none;
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
@@ -609,9 +608,10 @@ main {
 .service-icon-box {
   font-size: 40px;
   color: var(--orange-yellow-crayola);
+  margin-bottom: 10px;
 }
 
-.service-icon-box img {
+.service-icon-box ion-icon {
   margin: auto;
 }
 
@@ -770,7 +770,8 @@ main {
 }
 
 .modal-title {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 14px;
 }
 
 .modal-text,
@@ -799,6 +800,54 @@ main {
 .modal-text input {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.modal-text div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.modal-text button {
+  position: relative;
+  font-size: var(--fs-6);
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  gap: 6px;
+}
+
+.modal-text button::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.modal-text button ion-icon {
+  font-size: 20px;
+}
+
+.modal-text button:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.modal-text button:hover::before {
+  background: var(--bg-gradient-yellow-2);
 }
 
 .modal-content time {
@@ -1721,6 +1770,15 @@ textarea.form-input::-webkit-resizer {
   .form-btn ion-icon {
     font-size: 18px;
   }
+
+  .modal-text button {
+    --fs-6: 16px;
+    padding: 10px;
+  }
+
+  .modal-text button ion-icon {
+    font-size: 22px;
+  }
 }
 
 /**
@@ -2051,6 +2109,10 @@ textarea.form-input::-webkit-resizer {
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
+  }
+
+  .icon-box-cv {
+    --fs-5: 17px;
   }
 
   .separator:last-of-type {
