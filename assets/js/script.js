@@ -136,3 +136,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+const redirectToTarget = (link) => {
+  window.open(link, "_blank");
+};
